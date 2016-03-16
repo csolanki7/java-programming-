@@ -1,0 +1,71 @@
+package javaapplication4;
+
+import static java.time.Clock.system;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Chirag007
+ */
+public class Evenoddtest  {
+    
+    
+    
+    public static void main(String[] args) 
+   {
+       
+       
+        Scanner console = new Scanner (System.in);
+        
+        
+        
+        System.out.println("Enter the numers :" );
+        
+        
+        int number = console.nextInt();
+        
+        
+         if((number%2)==0){
+             
+             System.out.printf("number %d is even number %n " , number);
+             
+         } else 
+         {
+            System.out.printf("number %d is odd number %n ", number);
+                 
+                 }
+        
+         System.out.printf("finding number if its even or odd useing between AND operator %n ");
+        
+         
+         if ((number&1)==0)
+                 {
+             
+             System.out.printf("numer %d is even number %n " ,number );
+             
+         } else {
+             System.out.printf("number %d is odd number %n " , number ); 
+             
+         }
+       
+                }
+    
+}
+
+
+
+output : 
+
+  Enter the numers :
+3
+ number 3 is odd number 
+ finding number if its even or odd useing between AND operator 
+ number 3 is odd number 
+ 
+ 
+ Enter the numers :
+6
+number 6 is even number 
+ finding number if its even or odd useing between AND operator 
+ numer 6 is even number 
+ 
